@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>CURLING CHALLENGE Web apps with ASP.NET Core.</p>
+  
+    <form method="post">
+
+        <select class="form-select" aria-label="Default select example" name="diskShape">
+            <option selected>Select Disk Shape</option>
+            <option value="Circle">Circle</option>
+            <option value="Square">Square</option>
+            <option value="Triangle">Triangle</option>
+        </select>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Enter Disk Number:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1"name="diskNumber" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Enter Diamesion: </label>
+            <input type="text" class="form-control" name="diskDim" id="exampleInputPassword1">
+            <div id="emailHelp" class="form-text">Integer Number.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Get Result</button>
+    </form>
+</div>
+
